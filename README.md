@@ -26,6 +26,13 @@ npm install
 jupyter labextension link .
 ```
 
+Or try
+```bash
+npm install
+jupyter labextension install .
+```
+
+
 To rebuild the package and the JupyterLab app:
 
 ```bash

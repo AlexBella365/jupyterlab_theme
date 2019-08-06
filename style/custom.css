@@ -1,0 +1,52 @@
+body {
+    background: hsl(220, 50%, 30%);
+  }
+  
+.cm-s-jupyter span.cm-property {
+    color: var(--alexbella-variable);
+}
+
+.cm-s-jupyter span.cm-attribute {
+    color: var(--alexbella-function);
+}
+
+.cm-s-jupyter span.cm-keyword {
+    color: var(--alexbella-keyword);
+}
+
+.cm-s-jupyter span.cm-string {
+    color: var(--alexbella-string);
+}
+
+.cm-s-jupyter span.cm-operator {
+    color: var(--alexbella-dark-fg);
+}
+
+.cm-s-jupyter span.cm-builtin {
+    color: var(--alexbella-function);
+}
+
+.cm-s-jupyter span.cm-variable-2 {
+    color: var(--alexbella-dark-orange-1);
+}
+
+.cm-s-jupyter span.cm-variable-3 {
+    color: var(--alexbella-dark-green);
+}
+
+.cm-s-jupyter span.cm-error {
+    background: var(--alexbella-light-bg);
+    color: var(--alexbella-error);
+}
+
+.cm-s-jupyter span.cm-bracket {
+    color: var(--alexbella-red);
+}
+
+.cm-s-jupyter span.cm-tag {
+    color: var(--alexbella-variable);
+}
+
+.cm-s-jupyter span.cm-link {
+    color: var(--alexbella-string);
+}
