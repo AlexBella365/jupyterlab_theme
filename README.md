@@ -3,7 +3,7 @@
 Colorfull light theme for JupyterLab
 
 ## Screenshot
-<img src="https://imgur.com/xidQu2n" alt="drawing" width="900"/>
+<img src="https://imgur.com/xidQu2n.png" alt="drawing" width="900"/>
 
 ## Prerequisites
 
