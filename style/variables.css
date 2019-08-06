@@ -25,39 +25,37 @@ all of MD as it is not optimized for dense, information rich UIs.
 */
 
 :root {
-  /* Custom colors */
-  --alexbella-dark-cyan: #59e1e3;
-  --alexbella-dark-blue: #26bbd9;
-  --alexbella-dark-bg-1: #121417;
-  --alexbella-dark-mono-2: #828997;
-  --alexbella-dark-red-1: #e95678;
-  --alexbella-dark-mono-1: #abb2bf;
-  --alexbella-dark-silver: #aaaaaa;
-  --alexbella-dark-purple: #b877db;
-  --alexbella-dark-orange-2: #e5c07b;
-  --alexbella-dark-bg-hl: #232530;
-  --alexbella-dark-black: #0f1011;
-  --alexbella-dark-gutter: #2e303e;
-  --alexbella-dark-fg: #abb2bf;
-  --alexbella-dark-green: #29d398;
-  --alexbella-dark-red-2: #e95678;
-  --alexbella-dark-orange-1: #d19a66;
-  --alexbella-dark-mono-3: #5c6370;
-  --alexbella-dark-accent: #6c6f93;
-  --alexbella-dark-bg: #1c1e26;
-  --alexbella-dark-gray: #2e303e;
-  --alexbella-bg: #1c1e26;
-  --alexbella-light-bg: #232530;
-  --alexbella-accent-1: #6c6f93;
-  --alexbella-error: #f43e5c;
-  --alexbella-accent-2: #e95378;
-  --alexbella-selection: #2e303e;
-  --alexbella-keyword: #b877dbe6;
-  --alexbella-variable: #e95678e6;
-  --alexbella-function: #25b0bce6;
-  --alexbella-constant: #f09483e6;
-  --alexbella-class: #fac29ae6;
-  --alexbella-string: #fab795e6;
+  /* Custom colors for UI */
+  --ab-petrol-blue: #354c63;
+  --ab-neon: #9df100;
+
+  /* TO BE MODIFIED - Legacy */
+  --ab-dark-cyan: #59e1e3;
+  --ab-dark-blue: #26bbd9;
+  --ab-dark-bg-1: #121417;
+  --ab-dark-mono-2: #828997;
+  --ab-dark-red-1: #e95678;
+  --ab-dark-mono-1: #abb2bf;
+  --ab-dark-silver: #aaaaaa;
+  --ab-dark-purple: #b877db;
+  --ab-dark-orange-2: #e5c07b;
+  --ab-dark-bg-hl: #232530;
+  --ab-dark-black: #0f1011;
+  --ab-dark-gutter: #2e303e;
+  --ab-dark-fg: #abb2bf;
+  --ab-dark-green: #29d398;
+  --ab-dark-red-2: #e95678;
+  --ab-dark-orange-1: #d19a66;
+  --ab-dark-mono-3: #5c6370;
+  --ab-dark-accent: #6c6f93;
+  --ab-dark-bg: #1c1e26;
+  --ab-dark-gray: #2e303e;
+  --ab-bg: #1c1e26;
+  --ab-light-bg: #232530;
+  --ab-error: #f43e5c;
+  --ab-accent-2: #990612;
+  --ab-selection: #2e303e;
+
 
   /* Elevation
    *
@@ -67,24 +65,18 @@ all of MD as it is not optimized for dense, information rich UIs.
    * https://material-components-web.appspot.com/elevation.html
    */
   --jp-shadow-base-lightness: 0;
-  --jp-shadow-umbra-color: rgba(
-    var(--jp-shadow-base-lightness),
-    var(--jp-shadow-base-lightness),
-    var(--jp-shadow-base-lightness),
-    0.2
-  );
-  --jp-shadow-penumbra-color: rgba(
-    var(--jp-shadow-base-lightness),
-    var(--jp-shadow-base-lightness),
-    var(--jp-shadow-base-lightness),
-    0.14
-  );
-  --jp-shadow-ambient-color: rgba(
-    var(--jp-shadow-base-lightness),
-    var(--jp-shadow-base-lightness),
-    var(--jp-shadow-base-lightness),
-    0.12
-  );
+  --jp-shadow-umbra-color: rgba(var(--jp-shadow-base-lightness),
+      var(--jp-shadow-base-lightness),
+      var(--jp-shadow-base-lightness),
+      0.2);
+  --jp-shadow-penumbra-color: rgba(var(--jp-shadow-base-lightness),
+      var(--jp-shadow-base-lightness),
+      var(--jp-shadow-base-lightness),
+      0.14);
+  --jp-shadow-ambient-color: rgba(var(--jp-shadow-base-lightness),
+      var(--jp-shadow-base-lightness),
+      var(--jp-shadow-base-lightness),
+      0.12);
   --jp-elevation-z0: none;
   --jp-elevation-z1: 0px 2px 1px -1px var(--jp-shadow-umbra-color),
     0px 1px 1px 0px var(--jp-shadow-penumbra-color),
@@ -138,7 +130,8 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   --jp-ui-font-scale-factor: 1.2;
   --jp-ui-font-size0: 0.83333em;
-  --jp-ui-font-size1: 13px; /* Base font size */
+  --jp-ui-font-size1: 13px;
+  /* Base font size */
   --jp-ui-font-size2: 1.2em;
   --jp-ui-font-size3: 1.44em;
 
@@ -178,7 +171,8 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-content-line-height: 1.6;
   --jp-content-font-scale-factor: 1.2;
   --jp-content-font-size0: 0.83333em;
-  --jp-content-font-size1: 14px; /* Base font size */
+  --jp-content-font-size1: 14px;
+  /* Base font size */
   --jp-content-font-size2: 1.2em;
   --jp-content-font-size3: 1.44em;
   --jp-content-font-size4: 1.728em;
@@ -211,8 +205,10 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   --jp-code-font-size: 13px;
-  --jp-code-line-height: 1.3077; /* 17px for 13px base */
-  --jp-code-padding: 5px; /* 5px for 13px base, codemirror highlighting needs integer px value */
+  --jp-code-line-height: 1.3077;
+  /* 17px for 13px base */
+  --jp-code-padding: 5px;
+  /* 5px for 13px base, codemirror highlighting needs integer px value */
   --jp-code-font-family-default: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
   --jp-code-font-family: var(--jp-code-font-family-default);
 
@@ -321,10 +317,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   pixel so that no scrollbar appears if we have just one single-line cell in the
   notebook. This padding is to enable a 'scroll past end' feature in a notebook.
   */
-  --jp-notebook-scroll-padding: calc(
-    100% - var(--jp-code-font-size) * var(--jp-code-line-height) -
-      var(--jp-code-padding) - var(--jp-cell-padding) - 1px
-  );
+  --jp-notebook-scroll-padding: calc(100% - var(--jp-code-font-size) * var(--jp-code-line-height) - var(--jp-code-padding) - var(--jp-cell-padding) - 1px);
 
   /* Rendermime styles */
 
@@ -377,7 +370,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-mirror-editor-punctuation-color: #05a;
   --jp-mirror-editor-property-color: #05a;
   --jp-mirror-editor-operator-color: #aa22ff;
-  --jp-mirror-editor-comment-color: #408080;
+  --jp-mirror-editor-comment-color: #445454;
   --jp-mirror-editor-string-color: #ba2121;
   --jp-mirror-editor-string-2-color: #708;
   --jp-mirror-editor-meta-color: #aa22ff;
@@ -407,8 +400,6 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-search-toggle-on-opacity: 1;
   --jp-search-selected-match-background-color: rgb(245, 200, 0);
   --jp-search-selected-match-color: black;
-  --jp-search-unselected-match-background-color: var(
-    --jp-inverse-layout-color0
-  );
+  --jp-search-unselected-match-background-color: var(--jp-inverse-layout-color0);
   --jp-search-unselected-match-color: var(--jp-ui-inverse-font-color0);
 }

@@ -8,27 +8,27 @@ body {
   padding: 0 3px 0 5px;
   min-width: 20px;
   text-align: right;
-  color: var(--alexbella-dark-gray);
+  color: var(--ab-dark-gray);
   white-space: nowrap;
 }
 
 /* This is the region where the linenumbers are */
 .CodeMirror-gutters {
-  border-right: 1px solid var(--alexbella-dark-bg-hl);
-  background-color: var(--alexbella-dark-bg);
+  border-right: 1px solid var(--ab-dark-bg-hl);
+  background-color: var(--ab-dark-bg);
   white-space: nowrap;
 }
 
 /* Do some nice things with brackets */
 div.CodeMirror span.CodeMirror-matchingbracket {
-  color: var(--alexbella-function);
-  border-bottom: 1px solid var(--alexbella-dark-blue);
+  color: var(--ab-function);
+  border-bottom: 1px solid var(--ab-dark-blue);
   line-height: 1;
 }
 
 div.CodeMirror span.CodeMirror-nonmatchingbracket {
-  color: var(--alexbella-red);
-  border-bottom: 1px solid var(--alexbella-dark-red-1);
+  color: var(--ab-red);
+  border-bottom: 1px solid var(--ab-dark-red-1);
   line-height: 0.55;
 }
 
@@ -40,23 +40,23 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 }
 
 .CodeMirror-selected {
-  background: var(--alexbella-selection);
+  background: var(--ab-selection);
 }
 
 /* selected text highlight */
 .CodeMirror-focused .CodeMirror-selected {
-  background: var(--alexbella-selection);
+  background: var(--ab-selection);
 }
 
 /* Item selected in menu for files and what not */
 .jp-DirListing-item.jp-mod-selected {
   color: white;
-  background: var(--alexbella-dark-bg-hl);
+  background: var(--ab-dark-bg-hl);
 }
 
 /* Makes the running icon a tiny bit bigger */
 .jp-DirListing-item.jp-mod-running .jp-DirListing-itemIcon:before {
-  color: var(--alexbella-dark-green);
+  color: var(--ab-dark-green);
   content: "\25CF";
   font-size: 12px;
   position: relative;
@@ -70,7 +70,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 .p-Menu-item:hover:not([data-type="separator"]),
 .jp-FileBrowser-toolbar.jp-Toolbar .jp-ToolbarButtonComponent:hover,
 .jp-SideBar.p-TabBar.jp-mod-left .p-TabBar-tab:hover {
-  background: var(--alexbella-dark-bg-hl);
+  background: var(--ab-dark-bg-hl);
 }
 
 /* width */
@@ -86,18 +86,18 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--alexbella-dark-mono-3);
+  background: var(--ab-dark-mono-3);
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--alexbella-dark-mono-3);
+  background: var(--ab-dark-mono-3);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb:active {
-  background: var(--alexbella-dark-blue);
+  background: var(--ab-dark-blue);
 }
 
 /* Center any plots e.g. Matplotlib plots */
@@ -106,13 +106,13 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 }
 
 .jp-Completer-item.jp-mod-active {
-  color: var(--alexbella-dark-fg);
-  background: var(--alexbella-dark-bg-hl);
+  color: var(--ab-dark-fg);
+  background: var(--ab-dark-bg-hl);
 }
 
 /* Change the default blue color when hovering the collapser */
 .jp-Notebook .jp-Cell.jp-mod-active .jp-Collapser:hover {
-  background: var(--alexbella-dark-red-1);
+  background: var(--ab-dark-red-1);
 }
 
 /* Custom line rule */
@@ -124,8 +124,8 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   margin-right: 0em;
   border-style: inset;
   border-width: 1px;
-  border-top: 1px solid var(--alexbella-dark-fg);
-  border-bottom: 1px solid var(--alexbella-dark-fg);
+  border-top: 1px solid var(--ab-dark-fg);
+  border-bottom: 1px solid var(--ab-dark-fg);
 }
 
 .jp-MarkdownOutput {
@@ -137,56 +137,56 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 }
 
 .CodeMirror-linenumber {
-  color: var(--alexbella-dark-gray);
+  color: var(--ab-dark-gray);
 }
 
 .cm-s-zenburn {
-  background-color: var(--alexbella-dark-bg);
-  color: var(--alexbella-dark-fg);
+  background-color: var(--ab-dark-bg);
+  color: var(--ab-dark-fg);
 }
 
 .cm-s-zenburn .CodeMirror-gutters {
-  background: var(--alexbella-dark-bg) !important;
+  background: var(--ab-dark-bg) !important;
 }
 
 .cm-s-jupyter span.cm-property {
-  color: var(--alexbella-variable);
+  color: var(--ab-variable);
 }
 .cm-s-jupyter span.cm-attribute {
-  color: var(--alexbella-function);
+  color: var(--ab-function);
 }
 .cm-s-jupyter span.cm-keyword {
-  color: var(--alexbella-keyword);
+  color: var(--ab-keyword);
 }
 .cm-s-jupyter span.cm-string {
-  color: var(--alexbella-string);
+  color: var(--ab-string);
 }
 .cm-s-jupyter span.cm-operator {
-  color: var(--alexbella-dark-fg);
+  color: var(--ab-dark-fg);
 }
 .cm-s-jupyter span.cm-builtin {
-  color: var(--alexbella-function);
+  color: var(--ab-function);
 }
 
 .cm-s-jupyter span.cm-variable-2 {
-  color: var(--alexbella-dark-orange-1);
+  color: var(--ab-dark-orange-1);
 }
 .cm-s-jupyter span.cm-variable-3 {
-  color: var(--alexbella-dark-green);
+  color: var(--ab-dark-green);
 }
 
 .cm-s-jupyter span.cm-error {
-  background: var(--alexbella-light-bg);
-  color: var(--alexbella-error);
+  background: var(--ab-light-bg);
+  color: var(--ab-error);
 }
 .cm-s-jupyter span.cm-bracket {
-  color: var(--alexbella-red);
+  color: var(--ab-red);
 }
 .cm-s-jupyter span.cm-tag {
-  color: var(--alexbella-variable);
+  color: var(--ab-variable);
 }
 .cm-s-jupyter span.cm-link {
-  color: var(--alexbella-string);
+  color: var(--ab-string);
 }
 
 .widget-box .widget-label {

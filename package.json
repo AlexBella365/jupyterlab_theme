@@ -1,7 +1,7 @@
 {
   "name": "@alexbella/jupyterlab-custom-theme",
-  "version": "0.1.0",
-  "description": "Custom theme for JupyterLab",
+  "version": "0.2.0",
+  "description": "Colorfull light theme for JupyterLab",
   "author": "Alex Bella",
   "keywords": [
     "jupyter",

@@ -1,11 +1,9 @@
 # @alexbella/jupyterlab-custom-theme
 
-Custom theme for JupyterLab
+Colorfull light theme for JupyterLab
 
-<!--
 ## Screenshot
-<img src="" alt="drawing" width="900"/>
--->
+<img src="https://imgur.com/xidQu2n" alt="drawing" width="900"/>
 
 ## Prerequisites
 

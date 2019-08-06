@@ -15,8 +15,8 @@ const plugin: JupyterFrontEndPlugin<void> = {
   requires: [IThemeManager],
   activate: function(app: JupyterFrontEnd, manager: IThemeManager) {
     manager.register({
-      name: 'AB custom theme',
-      isLight: false,
+      name: 'Colorfull light theme by AB',
+      isLight: true,
       load: function() {
         let meta: HTMLMetaElement = document.createElement("meta");
         meta.name = "theme-color";

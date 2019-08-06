@@ -1,52 +1,96 @@
+:root {
+    /* Custom colors for code */
+    --ab-keyword: #037432e6;
+    --ab-variable: #281682;
+    --ab-property: #d81b47e6;
+    --ab-function: #167cc0fa;
+    --ab-constant: #e57f19;
+    --ab-class: #a09002e6;
+    --ab-string: #047c68e6;
+    --ab-operator: #5d0b64;
+    --ab-comment: #e2738d;
+}
+
+
 body {
-    background: hsl(220, 50%, 30%);
-  }
-  
+    background: var(--ab-petrol-blue);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--ab-accent-2);
+}
+
+/* Center any plots e.g. Matplotlib plots */
+.p-Widget.jp-RenderedImage.jp-mod-trusted.jp-OutputArea-output {
+    text-align: center;
+}
+
+
+
+
+/* Code keywords */
+.cm-s-jupyter span.cm-variable {
+    color: var(--ab-variable);
+}
+
 .cm-s-jupyter span.cm-property {
-    color: var(--alexbella-variable);
+    color: var(--ab-property);
 }
 
 .cm-s-jupyter span.cm-attribute {
-    color: var(--alexbella-function);
-}
-
-.cm-s-jupyter span.cm-keyword {
-    color: var(--alexbella-keyword);
-}
-
-.cm-s-jupyter span.cm-string {
-    color: var(--alexbella-string);
-}
-
-.cm-s-jupyter span.cm-operator {
-    color: var(--alexbella-dark-fg);
+    color: var(--ab-function);
 }
 
 .cm-s-jupyter span.cm-builtin {
-    color: var(--alexbella-function);
+    color: var(--ab-function);
+    font-weight: bold;
+}
+
+.cm-s-jupyter span.cm-keyword {
+    color: var(--ab-keyword);
+    font-weight: bold;
+}
+
+.cm-s-jupyter span.cm-string {
+    color: var(--ab-string);
+}
+
+.cm-s-jupyter span.cm-operator {
+    color: var(--ab-operator);
+}
+
+.cm-s-jupyter span.cm-number {
+    color: var(--ab-constant);
+}
+
+.cm-s-jupyter span.cm-comment {
+    color: var(--ab-comment);
 }
 
 .cm-s-jupyter span.cm-variable-2 {
-    color: var(--alexbella-dark-orange-1);
+    color: var(--ab-dark-orange-1);
 }
 
 .cm-s-jupyter span.cm-variable-3 {
-    color: var(--alexbella-dark-green);
+    color: var(--ab-dark-green);
 }
 
 .cm-s-jupyter span.cm-error {
-    background: var(--alexbella-light-bg);
-    color: var(--alexbella-error);
+    background: var(--ab-neon);
+    color: var(--ab-error);
 }
 
 .cm-s-jupyter span.cm-bracket {
-    color: var(--alexbella-red);
+    color: var(--ab-red);
 }
 
 .cm-s-jupyter span.cm-tag {
-    color: var(--alexbella-variable);
+    color: var(--ab-variable);
 }
 
 .cm-s-jupyter span.cm-link {
-    color: var(--alexbella-string);
+    color: var(--ab-string);
 }
