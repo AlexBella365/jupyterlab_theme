@@ -1,4 +1,9 @@
 :root {
+    /* Custom colors for UI */
+    --ab-petrol-blue: #354c63;
+    --ab-neon: #9df100;
+    --ab-accent: #d603c4;
+    --ab-headers: #18ca9e;
     /* Custom colors for code */
     --ab-keyword: #037432e6;
     --ab-variable: #281682;
@@ -11,7 +16,6 @@
     --ab-comment: #e2738d;
 }
 
-
 body {
     background: var(--ab-petrol-blue);
 }
@@ -20,16 +24,15 @@ h1,
 h2,
 h3,
 h4 {
-    color: var(--ab-accent-2);
+    color: var(--ab-headers);
+    text-shadow: 2px 2px 8px slategray;
+    font-weight: bold;
 }
 
 /* Center any plots e.g. Matplotlib plots */
 .p-Widget.jp-RenderedImage.jp-mod-trusted.jp-OutputArea-output {
     text-align: center;
 }
-
-
-
 
 /* Code keywords */
 .cm-s-jupyter span.cm-variable {
@@ -70,21 +73,9 @@ h4 {
     color: var(--ab-comment);
 }
 
-.cm-s-jupyter span.cm-variable-2 {
-    color: var(--ab-dark-orange-1);
-}
-
-.cm-s-jupyter span.cm-variable-3 {
-    color: var(--ab-dark-green);
-}
-
 .cm-s-jupyter span.cm-error {
     background: var(--ab-neon);
     color: var(--ab-error);
-}
-
-.cm-s-jupyter span.cm-bracket {
-    color: var(--ab-red);
 }
 
 .cm-s-jupyter span.cm-tag {
@@ -93,4 +84,8 @@ h4 {
 
 .cm-s-jupyter span.cm-link {
     color: var(--ab-string);
+}
+
+.cm-s-jupyter span.cm-meta {
+    color: var(--ab-accent);
 }

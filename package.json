@@ -1,7 +1,7 @@
 {
   "name": "@alexbella/jupyterlab-custom-theme",
-  "version": "0.2.0",
-  "description": "Colorfull light theme for JupyterLab",
+  "version": "0.3.0",
+  "description": "Colourful light theme for JupyterLab",
   "author": "Alex Bella",
   "keywords": [
     "jupyter",
@@ -21,7 +21,7 @@
   "types": "lib/index.d.ts",
   "style": "style/index.css",
   "directories": {
-    "lib": "lib/"
+    "lib": "lib"
   },
   "scripts": {
     "build": "tsc -b && webpack",
@@ -66,6 +66,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/AlexBella365/jupyterlab_theme.git"
+    "url": "git+https://github.com/AlexBella365/jupyterlab_theme.git"
   }
 }

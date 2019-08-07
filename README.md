@@ -1,6 +1,6 @@
 # @alexbella/jupyterlab-custom-theme
 
-Colorfull light theme for JupyterLab
+Colourful light theme for JupyterLab
 
 ## Screenshot
 <img src="https://imgur.com/xidQu2n.png" alt="drawing" width="900"/>
@@ -17,23 +17,12 @@ jupyter labextension install @alexbella/jupyterlab-custom-theme
 
 ## Development
 
-For a development install, do the following in the repository directory:
+
+To build the package and the JupyterLab app:
 
 ```bash
-npm install
-jupyter labextension link .
-```
-
-Or try
-```bash
-npm install
+jlpm install
+jlpm run build
 jupyter labextension install .
-```
-
-
-To rebuild the package and the JupyterLab app:
-
-```bash
-npm run build
 jupyter lab build
 ```

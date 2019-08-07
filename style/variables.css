@@ -25,38 +25,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 */
 
 :root {
-  /* Custom colors for UI */
-  --ab-petrol-blue: #354c63;
-  --ab-neon: #9df100;
-
-  /* TO BE MODIFIED - Legacy */
-  --ab-dark-cyan: #59e1e3;
-  --ab-dark-blue: #26bbd9;
-  --ab-dark-bg-1: #121417;
-  --ab-dark-mono-2: #828997;
-  --ab-dark-red-1: #e95678;
-  --ab-dark-mono-1: #abb2bf;
-  --ab-dark-silver: #aaaaaa;
-  --ab-dark-purple: #b877db;
-  --ab-dark-orange-2: #e5c07b;
-  --ab-dark-bg-hl: #232530;
-  --ab-dark-black: #0f1011;
-  --ab-dark-gutter: #2e303e;
-  --ab-dark-fg: #abb2bf;
-  --ab-dark-green: #29d398;
-  --ab-dark-red-2: #e95678;
-  --ab-dark-orange-1: #d19a66;
-  --ab-dark-mono-3: #5c6370;
-  --ab-dark-accent: #6c6f93;
-  --ab-dark-bg: #1c1e26;
-  --ab-dark-gray: #2e303e;
-  --ab-bg: #1c1e26;
-  --ab-light-bg: #232530;
-  --ab-error: #f43e5c;
-  --ab-accent-2: #990612;
-  --ab-selection: #2e303e;
-
-
+  
   /* Elevation
    *
    * We style box-shadows using Material Design's idea of elevation. These particular numbers are taken from here:
