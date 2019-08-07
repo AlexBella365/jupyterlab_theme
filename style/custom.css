@@ -3,7 +3,7 @@
     --ab-petrol-blue: hsl(210, 20%, 30%);
     --ab-neon: #d4ff00;
     --ab-accent: #d603c4;
-    --ab-headers: hsl(180, 80%, 40%);
+    --ab-headers: hsl(180, 90%, 40%);
 
     /* Custom colors for code */
     --ab-keyword: #037432e6;
@@ -17,7 +17,7 @@
     --ab-meta: #a06313;
 
     /* Override defaults */
-    --jp-layout-color1: hsl(210, 20%, 98%);
+    --jp-layout-color1: hsl(210, 20%, 95%);
 }
 
 body {
