@@ -25,7 +25,6 @@ all of MD as it is not optimized for dense, information rich UIs.
 */
 
 :root {
-  
   /* Elevation
    *
    * We style box-shadows using Material Design's idea of elevation. These particular numbers are taken from here:
@@ -33,6 +32,7 @@ all of MD as it is not optimized for dense, information rich UIs.
    * https://github.com/material-components/material-components-web
    * https://material-components-web.appspot.com/elevation.html
    */
+
   --jp-shadow-base-lightness: 0;
   --jp-shadow-umbra-color: rgba(var(--jp-shadow-base-lightness),
       var(--jp-shadow-base-lightness),
@@ -339,7 +339,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-mirror-editor-punctuation-color: #05a;
   --jp-mirror-editor-property-color: #05a;
   --jp-mirror-editor-operator-color: #aa22ff;
-  --jp-mirror-editor-comment-color: #445454;
+  --jp-mirror-editor-comment-color: #408080;
   --jp-mirror-editor-string-color: #ba2121;
   --jp-mirror-editor-string-2-color: #708;
   --jp-mirror-editor-meta-color: #aa22ff;

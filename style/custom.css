@@ -1,33 +1,41 @@
 :root {
     /* Custom colors for UI */
     --ab-petrol-blue: #354c63;
-    --ab-neon: #9df100;
+    --ab-neon: #d4ff00;
     --ab-accent: #d603c4;
-    --ab-headers: #18ca9e;
+    --ab-headers: hsl(180, 80%, 40%);
+
     /* Custom colors for code */
     --ab-keyword: #037432e6;
     --ab-variable: #281682;
     --ab-property: #d81b47e6;
     --ab-function: #167cc0fa;
     --ab-constant: #e57f19;
-    --ab-class: #a09002e6;
     --ab-string: #047c68e6;
-    --ab-operator: #5d0b64;
-    --ab-comment: #e2738d;
+    --ab-operator: #9e17aa;
+    --ab-comment: #da8fa1;
+    --ab-meta: #a06313;
+
+    /* Override defaults */
+    --jp-layout-color1: #eef2f6;
 }
 
 body {
     background: var(--ab-petrol-blue);
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1,h2,h3,h4 {
     color: var(--ab-headers);
-    text-shadow: 2px 2px 8px slategray;
-    font-weight: bold;
+    font-weight: bolder;
 }
+
+h2,h3,h4 {
+    border-left: 5px solid var(--ab-headers);
+    padding-left: 10px;
+    border-bottom: 5px solid var(--ab-headers);
+    padding-bottom: 10px;
+}
+
 
 /* Center any plots e.g. Matplotlib plots */
 .p-Widget.jp-RenderedImage.jp-mod-trusted.jp-OutputArea-output {
@@ -87,5 +95,5 @@ h4 {
 }
 
 .cm-s-jupyter span.cm-meta {
-    color: var(--ab-accent);
+    color: var(--ab-meta);
 }
