@@ -153,7 +153,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-content-heading-line-height: 1;
   --jp-content-heading-margin-top: 1.2em;
   --jp-content-heading-margin-bottom: 0.8em;
-  --jp-content-heading-font-weight: 500;
+  /*--jp-content-heading-font-weight: 500;*/
 
   /* Defaults use Material Design specification */
   --jp-content-font-color0: rgba(0, 0, 0, 1);
