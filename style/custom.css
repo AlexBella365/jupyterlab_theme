@@ -24,16 +24,18 @@ body {
     background: var(--ab-petrol-blue);
 }
 
-h1{
+.jp-MarkdownOutput h1{
     color: var(--ab-headers);
     text-align: center;
 }
 
-h2,h3,h4 {
+.jp-MarkdownOutput h2,
+.jp-MarkdownOutput h3,
+.jp-MarkdownOutput h4 {
     color: var(--ab-headers);
-    border-left: 5px solid var(--ab-headers);
+    border-left: 3px solid var(--ab-headers);
     padding-left: 10px;
-    border-top: 5px solid var(--ab-headers);
+    border-top: 3px solid var(--ab-headers);
     padding-top: 5px;
 }
 
