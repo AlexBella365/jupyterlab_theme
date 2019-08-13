@@ -3,7 +3,7 @@
     --ab-petrol-blue: hsl(210, 20%, 30%);
     --ab-neon: #d4ff00;
     --ab-accent: #d603c4;
-    --ab-headers: hsl(180, 100%, 40%);
+    --ab-headers: hsl(350, 80%, 40%);
 
     /* Custom colors for code */
     --ab-keyword: #037432e6;
@@ -12,10 +12,10 @@
     --ab-function: #167cc0fa;
     --ab-constant: #d66800;
     --ab-string: #0f7589;
-    --ab-operator: #d10e4fe6;
+    --ab-operator: #a318a3;
     --ab-comment: #c17083;
     --ab-meta: #a06313;
-
+    
     /* Override defaults */
     --jp-layout-color1: hsl(210, 30%, 95%);
 }
