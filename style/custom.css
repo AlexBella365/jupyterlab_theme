@@ -33,11 +33,19 @@ body {
 .jp-MarkdownOutput h3,
 .jp-MarkdownOutput h4 {
     color: var(--ab-headers);
-    border-left: 3px solid var(--ab-headers);
     padding-left: 10px;
-    border-top: 3px solid var(--ab-headers);
     padding-top: 5px;
 }
+
+.jp-MarkdownOutput h2{
+    border-left: 3px solid var(--ab-headers);
+    border-top: 3px solid var(--ab-headers);
+}
+
+.jp-MarkdownOutput h3{
+    border-left: 3px solid var(--ab-headers);
+}
+
 
 
 /* Center any plots e.g. Matplotlib plots */
