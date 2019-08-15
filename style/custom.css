@@ -1,20 +1,20 @@
 :root {
     /* Custom colors for UI */
     --ab-petrol-blue: hsl(210, 20%, 30%);
-    --ab-neon: #d4ff00;
-    --ab-accent: #d603c4;
-    --ab-headers: hsl(350, 80%, 40%);
+    --ab-neon: hsl(70, 100%, 50%);
+    --ab-accent: hsl(310, 100%, 50%);
+    --ab-headers: hsl(340, 80%, 40%);
 
     /* Custom colors for code */
-    --ab-keyword: #037432e6;
-    --ab-variable: #1e3fd1;
-    --ab-property: #670fcce6;
-    --ab-function: #167cc0fa;
-    --ab-constant: #d66800;
-    --ab-string: #0f7589;
-    --ab-operator: #a318a3;
-    --ab-comment: #c17083;
-    --ab-meta: #a06313;
+    --ab-keyword: hsl(145, 75%, 30%);
+    --ab-variable: hsl(230, 75%, 40%);
+    --ab-property: hsl(270, 75%, 40%);
+    --ab-function: hsl(210, 100%, 50%);
+    --ab-constant: hsl(30, 100%, 50%);
+    --ab-string: hsl(190, 70%, 40%);
+    --ab-operator: hsl(300, 75%, 40%);
+    --ab-comment: hsl(340, 20%, 70%);
+    --ab-meta: hsl(40, 80%, 30%);
     
     /* Override defaults */
     --jp-layout-color1: hsl(210, 30%, 95%);
@@ -25,8 +25,11 @@ body {
 }
 
 .jp-MarkdownOutput h1{
-    color: var(--ab-headers);
+    color:white;
+    background-color: var(--ab-headers);
     text-align: center;
+    border-radius: 30px;
+    padding: 10px;
 }
 
 .jp-MarkdownOutput h2,
@@ -38,15 +41,21 @@ body {
 }
 
 .jp-MarkdownOutput h2{
-    border-left: 3px solid var(--ab-headers);
     border-top: 3px solid var(--ab-headers);
+    border-radius: 10px;
 }
 
 .jp-MarkdownOutput h3{
     border-left: 3px solid var(--ab-headers);
 }
 
-
+/* Autoscroll outputs */
+.jp-OutputArea-child {
+    max-height: 15em;
+}
+.jp-OutputArea-child .jp-OutputArea-output {
+    overflow: auto;
+}
 
 /* Center any plots e.g. Matplotlib plots */
 .p-Widget.jp-RenderedImage.jp-mod-trusted.jp-OutputArea-output {
