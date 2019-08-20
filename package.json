@@ -1,6 +1,6 @@
 {
   "name": "@alexbella/jupyterlab-custom-theme",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "description": "Colourful light theme for JupyterLab",
   "author": "Alex Bella",
   "keywords": [
@@ -24,6 +24,12 @@
     "lib": "lib"
   },
   "scripts": {
+    "---------- VERSION ----------": "",
+    "prerelease": "npm version patch --no-git-tag-version",
+    "release": "VERSION=$(node -pe \"require('./package.json').version\") && git add . && git commit -m 'Bump version' --no-verify && git tag -a v$VERSION -m 'v$VERSION'",
+    "postrelease": "git push --follow-tags --no-verify",
+    "fullpush": "npm run prerelease && npm run release && npm run postrelease",
+    "---------- END VERSION ----------": "",
     "build": "tsc -b && webpack",
     "build:webpack": "webpack",
     "clean": "rimraf lib && rimraf tsconfig.tsbuildinfo",
