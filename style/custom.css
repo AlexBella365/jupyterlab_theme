@@ -52,7 +52,7 @@ body {
 
 /* Autoscroll outputs */
 .jp-OutputArea-child {
-    max-height: 15em;
+    max-height: 20em;
 }
 .jp-OutputArea-child .jp-OutputArea-output {
     overflow: auto;
