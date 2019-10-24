@@ -13,8 +13,9 @@
     --ab-constant: hsl(30, 100%, 50%);
     --ab-string: hsl(190, 70%, 40%);
     --ab-operator: hsl(300, 75%, 40%);
-    --ab-comment: hsl(340, 20%, 70%);
+    --ab-comment: hsl(340, 35%, 65%);
     --ab-meta: hsl(40, 80%, 30%);
+    
     
     /* Override defaults */
     --jp-layout-color1: hsl(210, 30%, 95%);
@@ -51,7 +52,7 @@ body {
 
 /* Autoscroll outputs */
 .jp-OutputArea-child {
-    max-height: 30em;
+    max-height: 15em;
 }
 .jp-OutputArea-child .jp-OutputArea-output {
     overflow: auto;
