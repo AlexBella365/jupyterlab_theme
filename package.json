@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "@alexbella/jupyterlab-custom-theme",
+=======
+  "name": "jupyterlab-custom-theme",
+>>>>>>> 191cc1bf014a7ac7d80ae77d8f22c908e845a9e1
   "version": "0.3.11",
   "description": "Colourful light theme for JupyterLab",
   "author": "Alex Bella",

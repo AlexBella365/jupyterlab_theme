@@ -1,6 +1,6 @@
-# @alexbella/jupyterlab-custom-theme
+# jupyterlab-custom-theme
 
-Colourful light theme for JupyterLab
+Colourful light theme for JupyterLab with vivid Python linting.
 
 ## Screenshot
 ![screenshot](./imgs/screenshot.png)
@@ -12,7 +12,7 @@ Colourful light theme for JupyterLab
 ## Installation
 
 ```bash
-jupyter labextension install @alexbella/jupyterlab-custom-theme
+jupyter labextension install jupyterlab-custom-theme
 ```
 
 ## Development
