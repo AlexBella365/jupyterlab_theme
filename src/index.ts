@@ -8,10 +8,10 @@ import {
 } from '@jupyterlab/apputils';
 
 /**
- * A plugin for @alexbella/jupyterlab-custom-theme
+ * A plugin for jupyterlab-custom-theme
  */
 const plugin: JupyterFrontEndPlugin<void> = {
-  id: '@alexbella/jupyterlab-custom-theme:plugin',
+  id: 'jupyterlab-custom-theme:plugin',
   requires: [IThemeManager],
   activate: function(app: JupyterFrontEnd, manager: IThemeManager) {
     manager.register({
@@ -23,7 +23,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
         meta.id = "theme-color-AB"
         meta.content = "#1C1E26";
         document.getElementsByTagName("head")[0].appendChild(meta);
-        return manager.loadCSS('@alexbella/jupyterlab-custom-theme/index.css');
+        return manager.loadCSS('jupyterlab-custom-theme/index.css');
       },
       unload: function() {
         let meta: HTMLElement = document.getElementById("theme-color-AB");
