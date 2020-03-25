@@ -18,7 +18,7 @@ jupyter labextension install jupyterlab-custom-theme
 ## Development
 
 
-To build the package and the JupyterLab app:
+To build the package and the JupyterLab app from source:
 
 ```bash
 jlpm install
