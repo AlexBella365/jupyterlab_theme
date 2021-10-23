@@ -1,17 +1,19 @@
 # jupyterlab-custom-theme
 
 Colourful light theme for JupyterLab with vivid Python linting.
+Updated to support JupyterLab 3.x.
 
 ## Screenshot
 ![screenshot](./imgs/screenshot.png)
 
 ## Prerequisites
 
-* JupyterLab >=1.0
+* JupyterLab >=3.0
 
-## Installation
+## Install
 
-```bash
+From npm:
+```
 jupyter labextension install jupyterlab-custom-theme
 ```
 

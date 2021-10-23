@@ -1,77 +1,67 @@
 {
   "name": "jupyterlab-custom-theme",
-  "version": "0.4.5",
+  "version": "1.0.0",
   "description": "Colourful light theme for JupyterLab",
-  "author": "Alex Bella",
   "keywords": [
     "jupyter",
     "jupyterlab",
-    "jupyterlab-extension",
-    "jupyterlab-theme"
+    "jupyterlab-extension"
   ],
-  "license": "BSD-3-Clause",
-  "files": [
-    "lib/*.d.ts",
-    "lib/*.js.map",
-    "lib/*.js",
-    "static/*.ttf",
-    "static/index.css"
-  ],
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
-  "style": "style/index.css",
-  "directories": {
-    "lib": "lib"
-  },
-  "scripts": {
-    "---------- VERSION ----------": "",
-    "prerelease": "npm version patch --no-git-tag-version",
-    "release": "VERSION=$(node -pe \"require('./package.json').version\") && git add . && git commit -m 'Bump version' --no-verify && git tag -a v$VERSION -m 'v$VERSION'",
-    "postrelease": "git push --follow-tags --no-verify",
-    "fullpush": "npm run prerelease && npm run release && npm run postrelease",
-    "---------- END VERSION ----------": "",
-    "build": "tsc -b && webpack",
-    "build:webpack": "webpack",
-    "clean": "rimraf lib && rimraf tsconfig.tsbuildinfo",
-    "prepare": "npm run clean && npm run build",
-    "watch": "tsc -w",
-    "watch:webpack": "webpack --watch"
-  },
-  "dependencies": {
-    "@jupyterlab/application": ">=1.0.0",
-    "@jupyterlab/apputils": ">=1.0.0"
-  },
-  "devDependencies": {
-    "css-loader": "^3.0.0",
-    "mini-css-extract-plugin": "~0.4.4",
-    "rimraf": "~3.0.0",
-    "svg-url-loader": "~2.3.1",
-    "svgo": "^1.2.2",
-    "svgo-loader": "~2.1.0",
-    "typedoc": "~0.17.3",
-    "typescript": "~3.7.3",
-    "url-loader": "~1.0.1",
-    "watch": "~1.0.2",
-    "webpack": "^4.42.1",
-    "webpack-cli": "^3.0.3"
-  },
-  "sideEffects": [
-    "style/*.css"
-  ],
-  "publishConfig": {
-    "access": "public"
-  },
-  "jupyterlab": {
-    "extension": true,
-    "themeDir": "static",
-    "themePath": "static/index.css"
-  },
   "homepage": "https://github.com/AlexBella365/jupyterlab_theme",
   "bugs": {
     "url": "https://github.com/AlexBella365/jupyterlab_theme/issues"
   },
+  "license": "BSD-3-Clause",
+  "author": "Alex Bella",
+  "files": [
+    "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
+    "style/**/*.{css,eot,gif,html,jpg,json,png,svg,woff2,ttf}"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlexBella365/jupyterlab_theme.git"
+    "url": "https://github.com/AlexBella365/jupyterlab_theme.git"
+  },
+  "scripts": {
+    "build": "jlpm run build:lib && jlpm run build:labextension:dev",
+    "build:prod": "jlpm run build:lib && jlpm run build:labextension",
+    "build:labextension": "jupyter labextension build .",
+    "build:labextension:dev": "jupyter labextension build --development True .",
+    "build:lib": "tsc",
+    "clean": "jlpm run clean:lib",
+    "clean:lib": "rimraf lib tsconfig.tsbuildinfo",
+    "clean:labextension": "rimraf jupyterlab-custom-theme/labextension",
+    "clean:all": "jlpm run clean:lib && jlpm run clean:labextension",
+    "eslint": "eslint . --ext .ts,.tsx --fix",
+    "eslint:check": "eslint . --ext .ts,.tsx",
+    "install:extension": "jupyter labextension develop --overwrite .",
+    "prepare": "jlpm run clean && jlpm run build:prod",
+    "watch": "run-p watch:src watch:labextension",
+    "watch:src": "tsc -w",
+    "watch:labextension": "jupyter labextension watch ."
+  },
+  "dependencies": {
+    "@jupyterlab/application": "^3.0.0"
+  },
+  "devDependencies": {
+    "@jupyterlab/builder": "^3.0.0",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.19.0",
+    "rimraf": "^3.0.2",
+    "typescript": "~4.0.3"
+  },
+  "sideEffects": [
+    "style/*.css"
+  ],
+  "jupyterlab": {
+    "extension": true,
+    "themePath": "style/index.css",
+    "outputDir": "jupyterlab-custom-theme/labextension"
   }
 }
