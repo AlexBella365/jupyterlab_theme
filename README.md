@@ -2,6 +2,7 @@
 
 Colourful light theme for JupyterLab with vivid Python linting.
 Updated to support JupyterLab 3.x.
+
 *Note: This is a personal project and no support is guaranteed*
 
 ## Screenshot
