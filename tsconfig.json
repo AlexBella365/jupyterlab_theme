@@ -6,8 +6,9 @@
     "esModuleInterop": true,
     "incremental": true,
     "jsx": "react",
+    "lib": ["ES2020", "DOM"],
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "noEmitOnError": true,
     "noImplicitAny": true,
     "noUnusedLocals": true,
@@ -15,9 +16,10 @@
     "resolveJsonModule": true,
     "outDir": "lib",
     "rootDir": "src",
+    "skipLibCheck": true,
     "strict": true,
-    "strictNullChecks": false,
-    "target": "es2018",
+    "strictNullChecks": true,
+    "target": "ES2020",
     "types": []
   },
   "include": ["src/*"]

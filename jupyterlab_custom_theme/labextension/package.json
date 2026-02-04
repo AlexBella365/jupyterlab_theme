@@ -88,6 +88,11 @@
   "jupyterlab": {
     "extension": true,
     "themePath": "style/index.css",
-    "outputDir": "jupyterlab_custom_theme/labextension"
+    "outputDir": "jupyterlab_custom_theme/labextension",
+    "_build": {
+      "load": "static/remoteEntry.7176c6b3de2556dca9b1.js",
+      "extension": "./extension",
+      "style": "./style"
+    }
   }
 }
