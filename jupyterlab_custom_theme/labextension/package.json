@@ -34,7 +34,7 @@
     "build:labextension": "jupyter labextension build .",
     "build:labextension:dev": "jupyter labextension build --development True .",
     "clean": "jlpm clean:labextension",
-    "clean:labextension": "rimraf jupyterlab_custom_theme/labextension",
+    "clean:labextension": "rimraf jupyterlab_custom_theme/labextension jupyterlab_custom_theme/_version.py",
     "clean:all": "jlpm clean:labextension",
     "eslint": "eslint . --cache --fix",
     "eslint:check": "eslint . --cache",
@@ -75,6 +75,11 @@
   "jupyterlab": {
     "extension": true,
     "themePath": "style/index.css",
-    "outputDir": "jupyterlab_custom_theme/labextension"
+    "outputDir": "jupyterlab_custom_theme/labextension",
+    "_build": {
+      "load": "static/remoteEntry.0f6b632536c63eab0bb6.js",
+      "extension": "./extension",
+      "style": "./style"
+    }
   }
 }
