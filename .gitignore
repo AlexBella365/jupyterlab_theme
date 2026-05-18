@@ -9,3 +9,6 @@ SIMPLIFICATION_ANALYSIS.md
 jupyterlab_custom_theme/_version.py
 __pycache__/
 *.pyc
+package-lock.json
+.yarn/cache/
+.yarn/install-state.gz
