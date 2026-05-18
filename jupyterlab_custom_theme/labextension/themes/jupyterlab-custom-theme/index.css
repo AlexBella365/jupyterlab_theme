@@ -389,8 +389,8 @@ all of MD as it is not optimized for dense, information rich UIs.
     --ab-operator: hsl(300, 75%, 40%);
     --ab-comment: hsl(340, 30%, 70%);
     --ab-meta: hsl(40, 80%, 30%);
-    
-    
+    --ab-error: hsl(0, 70%, 50%);
+
     /* Override defaults */
     --jp-layout-color1: hsl(210, 30%, 95%);
 }
@@ -399,7 +399,7 @@ body {
     background: var(--ab-petrol-blue);
 }
 
-.jp-MarkdownOutput h1{
+.jp-MarkdownOutput h1 {
     color:white;
     background-color: var(--ab-headers);
     text-align: center;
@@ -415,12 +415,12 @@ body {
     padding-top: 5px;
 }
 
-.jp-MarkdownOutput h2{
+.jp-MarkdownOutput h2 {
     border-top: 3px solid var(--ab-headers);
     border-radius: 10px;
 }
 
-.jp-MarkdownOutput h3{
+.jp-MarkdownOutput h3 {
     border-left: 3px solid var(--ab-headers);
 }
 

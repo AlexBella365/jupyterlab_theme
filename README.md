@@ -11,7 +11,7 @@ Updated to support JupyterLab 4.x.
 
 ## Prerequisites
 
-* JupyterLab >= 4.0.0
+* JupyterLab >= 4.5.0
 
 ## Install
 

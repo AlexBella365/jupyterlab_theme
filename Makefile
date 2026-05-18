@@ -1,4 +1,4 @@
-.PHONY: build clean dev install lint uninstall watch
+.PHONY: build build-prod clean dev install lint reload uninstall watch
 
 # Build the extension for development
 build:
@@ -20,6 +20,10 @@ dev:
 # Install production package
 install:
 	pip install .
+
+# Reload the extension (rebuild + link)
+reload: build
+	jupyter labextension develop . --overwrite
 
 # Run all linters
 lint:

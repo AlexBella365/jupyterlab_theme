@@ -5,3 +5,7 @@ static/
 *.egg-info/
 .ipynb_checkpoints
 *.tsbuildinfo
+SIMPLIFICATION_ANALYSIS.md
+jupyterlab_custom_theme/_version.py
+__pycache__/
+*.pyc

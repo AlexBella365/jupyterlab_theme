@@ -34,7 +34,7 @@
     "build:labextension": "jupyter labextension build .",
     "build:labextension:dev": "jupyter labextension build --development True .",
     "clean": "jlpm clean:labextension",
-    "clean:labextension": "rimraf jupyterlab_custom_theme/labextension jupyterlab_custom_theme/_version.py",
+    "clean:labextension": "rimraf jupyterlab_custom_theme/labextension",
     "clean:all": "jlpm clean:labextension",
     "eslint": "eslint . --cache --fix",
     "eslint:check": "eslint . --cache",
