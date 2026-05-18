@@ -1,6 +1,6 @@
 {
   "name": "jupyterlab-custom-theme",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Colourful light theme for JupyterLab with vivid Python linting",
   "keywords": [
     "jupyter",
@@ -85,7 +85,7 @@
     "themePath": "style/index.css",
     "outputDir": "jupyterlab_custom_theme/labextension",
     "_build": {
-      "load": "static/remoteEntry.53ad6587377aaee9cd88.js",
+      "load": "static/remoteEntry.d66fd9467ac8a48ea12f.js",
       "extension": "./extension",
       "style": "./style"
     }
