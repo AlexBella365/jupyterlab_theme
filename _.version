@@ -1,7 +1,0 @@
-"""Version information"""
-
-# Version of the Python package
-__version__ = "2.0.0"
-
-# Version string for JupyterLab
-version_info = tuple(int(x) for x in __version__.split('.'))

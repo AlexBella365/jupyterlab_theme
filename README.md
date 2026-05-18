@@ -14,6 +14,7 @@ Updated to support JupyterLab 4.x.
 * JupyterLab >= 4.0.0
 
 ## Install
+
 ```bash
 pip install jupyterlab-custom-theme
 ```
@@ -21,6 +22,7 @@ pip install jupyterlab-custom-theme
 ## Development
 
 For a development installation:
+
 ```bash
 # Clone the repository
 git clone https://github.com/AlexBella365/jupyterlab_theme.git
@@ -32,20 +34,22 @@ pip install -e .
 # Link your development version of the extension with JupyterLab
 jupyter labextension develop . --overwrite
 
-# Rebuild extension TypeScript source after making changes
+# Rebuild extension after making changes
 jlpm build
 ```
 
 You can watch the source directory and run JupyterLab at the same time in different terminals to watch for changes in the extension's source and automatically rebuild the extension.
+
 ```bash
 # Watch the source directory in one terminal, automatically rebuilding when needed
-jlpm watch
+jupyter labextension watch .
 
 # Run JupyterLab in another terminal
 jupyter lab
 ```
 
 ## Uninstall
+
 ```bash
 pip uninstall jupyterlab-custom-theme
 ```

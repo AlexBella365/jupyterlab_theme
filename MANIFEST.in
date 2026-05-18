@@ -3,7 +3,6 @@ include README.md
 include pyproject.toml
 include package.json
 include install.json
-include tsconfig.json
 include *.js
 
 graft jupyterlab_custom_theme/labextension
