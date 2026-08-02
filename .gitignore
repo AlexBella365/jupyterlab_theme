@@ -12,4 +12,5 @@ __pycache__/
 package-lock.json
 .yarn/
 jupyterlab_custom_theme/labextension/
+.eslintcache
 .stylelintcache

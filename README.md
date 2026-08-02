@@ -9,7 +9,7 @@ Colourful light theme for JupyterLab with vivid Python syntax highlighting.
 ## Features
 
 - Light theme with custom colour palette (petrol blue, neon, accent)
-- Vivid Python syntax highlighting (CodeMirror-based)
+- Vivid Python syntax highlighting (CodeMirror 6)
 - Colourful Markdown output styling (centred h1, coloured borders on h2–h4)
 - Autoscroll outputs with max-height constraint
 - Centred plot rendering (Matplotlib, etc.)
@@ -57,7 +57,7 @@ jlpm install
 jlpm build
 
 # Link your development version of the extension with JupyterLab
-jupyter labextension develop . --overwrite
+jupyter-builder develop . --overwrite
 ```
 
 Alternatively, `make dev` performs the editable Python install and link in one step,
@@ -67,11 +67,23 @@ You can watch the source directory and run JupyterLab at the same time in differ
 
 ```bash
 # Watch the source directory in one terminal, automatically rebuilding when needed
-jupyter labextension watch .
+jupyter-builder watch .
 
 # Run JupyterLab in another terminal
 jupyter lab
 ```
+
+## Project layout
+
+The extension is a TypeScript plugin (in `src/`) that registers the theme with
+JupyterLab's `ThemeManager`. The styles are split into:
+
+- `style/variables.css` – the colour palette and JupyterLab design tokens
+- `style/base.css` – typography, Markdown output, autoscroll and plot styling
+- `style/tokens.css` – CodeMirror 6 syntax highlighting tokens
+
+The Python package builds the lab extension with `@jupyter/builder`, and release
+workflows are provided via `jupyter-releaser`.
 
 ## Uninstall
 

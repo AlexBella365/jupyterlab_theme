@@ -1,0 +1,62 @@
+/* Set the default typography for monospace elements */
+tt,
+code,
+kbd,
+samp,
+pre {
+  font-family: var(--jp-code-font-family);
+  font-size: var(--jp-code-font-size);
+  line-height: var(--jp-code-line-height);
+}
+
+body {
+  background: var(--ab-petrol-blue);
+}
+
+/* Markdown output styling */
+.jp-MarkdownOutput h1 {
+  color: white;
+  background-color: var(--ab-headers);
+  text-align: center;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.jp-MarkdownOutput h2,
+.jp-MarkdownOutput h3,
+.jp-MarkdownOutput h4 {
+  color: var(--ab-headers);
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.jp-MarkdownOutput h2 {
+  border-top: 3px solid var(--ab-headers);
+  border-radius: 10px;
+}
+
+.jp-MarkdownOutput h3 {
+  border-left: 3px solid var(--ab-headers);
+}
+
+/* Autoscroll outputs */
+.jp-OutputArea-child {
+  max-height: 25em;
+}
+
+.jp-OutputArea-child .jp-OutputArea-output {
+  overflow: auto;
+}
+
+/* Center any plots e.g. Matplotlib plots */
+.p-Widget.jp-RenderedImage.jp-mod-trusted.jp-OutputArea-output {
+  text-align: center;
+}
+
+/* Override FAST design system variables for tree items */
+jp-tree-item.jp-TreeItem {
+  /* Override the neutral-fill-stealth variables used by FAST components */
+  --neutral-fill-stealth-rest: var(--jp-layout-color0) !important;
+  --neutral-fill-stealth-hover: var(--jp-layout-color2) !important;
+  --neutral-fill-stealth-active: var(--jp-layout-color0) !important;
+}

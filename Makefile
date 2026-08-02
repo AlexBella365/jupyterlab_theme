@@ -15,7 +15,7 @@ clean:
 # Install in editable (development) mode
 dev:
 	pip install -e .
-	jupyter labextension develop . --overwrite
+	jupyter-builder develop . --overwrite
 
 # Install production package
 install:
@@ -23,7 +23,7 @@ install:
 
 # Reload the extension (rebuild + link)
 reload: build
-	jupyter labextension develop . --overwrite
+	jupyter-builder develop . --overwrite
 
 # Run all linters
 lint:

@@ -1,0 +1,17 @@
+/* Additional CodeMirror 6 token styling */
+
+/* Class names and type names */
+.cm-editor .tok-className,
+.cm-editor .tok-typeName {
+  color: var(--ab-function) !important;
+}
+
+/* Function calls */
+.cm-editor .tok-function:not(.tok-definition) {
+  color: var(--ab-function) !important;
+}
+
+/* Keywords */
+.cm-editor .tok-keyword {
+  font-weight: bold;
+}

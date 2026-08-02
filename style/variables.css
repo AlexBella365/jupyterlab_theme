@@ -25,6 +25,24 @@ all of MD as it is not optimized for dense, information rich UIs.
 */
 
 :root {
+  /* Custom colors for UI */
+  --ab-petrol-blue: hsl(210, 20%, 30%);
+  --ab-neon: hsl(70, 100%, 50%);
+  --ab-accent: hsl(310, 100%, 50%);
+  --ab-headers: hsl(340, 70%, 30%);
+
+  /* Custom colors for code */
+  --ab-keyword: hsl(145, 75%, 30%);
+  --ab-variable: hsl(230, 75%, 50%);
+  --ab-property: hsl(270, 75%, 50%);
+  --ab-function: hsl(210, 100%, 50%);
+  --ab-constant: hsl(30, 100%, 50%);
+  --ab-string: hsl(190, 70%, 40%);
+  --ab-operator: hsl(300, 75%, 40%);
+  --ab-comment: hsl(340, 30%, 70%);
+  --ab-meta: hsl(40, 80%, 30%);
+  --ab-error: hsl(0, 70%, 50%);
+
   /* Elevation
    *
    * We style box-shadows using Material Design's idea of elevation. These particular numbers are taken from here:
@@ -213,7 +231,7 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   --jp-layout-color0: white;
-  --jp-layout-color1: white;
+  --jp-layout-color1: hsl(210, 30%, 95%);
   --jp-layout-color2: var(--md-grey-200);
   --jp-layout-color3: var(--md-grey-400);
   --jp-layout-color4: var(--md-grey-600);
@@ -344,30 +362,30 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Code mirror specific styles */
 
-  --jp-mirror-editor-keyword-color: #008000;
-  --jp-mirror-editor-atom-color: #88f;
-  --jp-mirror-editor-number-color: #080;
-  --jp-mirror-editor-def-color: #00f;
-  --jp-mirror-editor-variable-color: var(--md-grey-900);
-  --jp-mirror-editor-variable-2-color: #05a;
-  --jp-mirror-editor-variable-3-color: #085;
-  --jp-mirror-editor-punctuation-color: #05a;
-  --jp-mirror-editor-property-color: #05a;
-  --jp-mirror-editor-operator-color: #a2f;
-  --jp-mirror-editor-comment-color: #408080;
-  --jp-mirror-editor-string-color: #ba2121;
-  --jp-mirror-editor-string-2-color: #708;
-  --jp-mirror-editor-meta-color: #a2f;
-  --jp-mirror-editor-qualifier-color: #555;
-  --jp-mirror-editor-builtin-color: #008000;
-  --jp-mirror-editor-bracket-color: #997;
-  --jp-mirror-editor-tag-color: #170;
-  --jp-mirror-editor-attribute-color: #00c;
-  --jp-mirror-editor-header-color: blue;
-  --jp-mirror-editor-quote-color: #090;
-  --jp-mirror-editor-link-color: #00c;
-  --jp-mirror-editor-error-color: #f00;
-  --jp-mirror-editor-hr-color: #999;
+  --jp-mirror-editor-keyword-color: var(--ab-keyword);
+  --jp-mirror-editor-atom-color: var(--ab-constant);
+  --jp-mirror-editor-number-color: var(--ab-constant);
+  --jp-mirror-editor-def-color: var(--ab-function);
+  --jp-mirror-editor-variable-color: var(--ab-variable);
+  --jp-mirror-editor-variable-2-color: var(--ab-variable);
+  --jp-mirror-editor-variable-3-color: var(--ab-variable);
+  --jp-mirror-editor-punctuation-color: var(--ab-operator);
+  --jp-mirror-editor-property-color: var(--ab-property);
+  --jp-mirror-editor-operator-color: var(--ab-operator);
+  --jp-mirror-editor-comment-color: var(--ab-comment);
+  --jp-mirror-editor-string-color: var(--ab-string);
+  --jp-mirror-editor-string-2-color: var(--ab-string);
+  --jp-mirror-editor-meta-color: var(--ab-meta);
+  --jp-mirror-editor-qualifier-color: var(--ab-meta);
+  --jp-mirror-editor-builtin-color: var(--ab-function);
+  --jp-mirror-editor-bracket-color: var(--ab-operator);
+  --jp-mirror-editor-tag-color: var(--ab-variable);
+  --jp-mirror-editor-attribute-color: var(--ab-function);
+  --jp-mirror-editor-header-color: var(--ab-headers);
+  --jp-mirror-editor-quote-color: var(--ab-string);
+  --jp-mirror-editor-link-color: var(--ab-string);
+  --jp-mirror-editor-error-color: var(--ab-error);
+  --jp-mirror-editor-hr-color: var(--ab-comment);
 
   /* Vega extension styles */
 
