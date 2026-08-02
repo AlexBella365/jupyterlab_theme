@@ -14,6 +14,10 @@ Colourful light theme for JupyterLab with vivid Python syntax highlighting.
 
 - JupyterLab >= 4.5.0
 
+## Activate the theme
+
+After installing, select **Custom Theme** from _Settings → Themes → JupyterLab Theme_.
+
 ## Install
 
 ### Via pip (recommended)

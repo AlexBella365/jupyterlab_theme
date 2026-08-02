@@ -14,6 +14,11 @@ Colourful light theme for JupyterLab with vivid Python syntax highlighting.
 - Autoscroll outputs with max-height constraint
 - Centred plot rendering (Matplotlib, etc.)
 
+## Activate the theme
+
+After installing the extension, select **Custom Theme** from
+_Settings → Themes → JupyterLab Theme_.
+
 ## Prerequisites
 
 - JupyterLab >= 4.5.0
@@ -34,6 +39,8 @@ This package is also published to npm for use with JupyterLab's extension system
 npm install jupyterlab-custom-theme
 ```
 
+Then select **Custom Theme** from _Settings → Themes → JupyterLab Theme_.
+
 ## Development
 
 For a development installation:
@@ -43,15 +50,18 @@ For a development installation:
 git clone https://github.com/AlexBella365/jupyterlab_theme.git
 cd jupyterlab_theme
 
-# Install in editable mode
-pip install -e .
+# Install the JavaScript dependencies
+jlpm install
+
+# Build the extension
+jlpm build
 
 # Link your development version of the extension with JupyterLab
 jupyter labextension develop . --overwrite
-
-# Rebuild extension after making changes
-jlpm build
 ```
+
+Alternatively, `make dev` performs the editable Python install and link in one step,
+and `make reload` rebuilds and re-links after source changes.
 
 You can watch the source directory and run JupyterLab at the same time in different terminals to watch for changes in the extension's source and automatically rebuild the extension.
 

@@ -10,6 +10,7 @@ jupyterlab_custom_theme/_version.py
 __pycache__/
 *.pyc
 package-lock.json
-.yarn/cache/
-.yarn/install-state.gz
-jupyterlab_custom_theme/labextension/build_log.json
+.yarn/
+jupyterlab_custom_theme/labextension/
+.eslintcache
+.stylelintcache
