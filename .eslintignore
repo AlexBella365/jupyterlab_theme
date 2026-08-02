@@ -2,3 +2,5 @@ node_modules
 dist
 coverage
 tests
+jupyterlab_custom_theme/labextension
+.eslintrc.js

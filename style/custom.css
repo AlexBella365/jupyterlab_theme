@@ -1,120 +1,121 @@
 :root {
-    /* Custom colors for UI */
-    --ab-petrol-blue: hsl(210, 20%, 30%);
-    --ab-neon: hsl(70, 100%, 50%);
-    --ab-accent: hsl(310, 100%, 50%);
-    --ab-headers: hsl(340, 70%, 30%);
+  /* Custom colors for UI */
+  --ab-petrol-blue: hsl(210, 20%, 30%);
+  --ab-neon: hsl(70, 100%, 50%);
+  --ab-accent: hsl(310, 100%, 50%);
+  --ab-headers: hsl(340, 70%, 30%);
 
-    /* Custom colors for code */
-    --ab-keyword: hsl(145, 75%, 30%);
-    --ab-variable: hsl(230, 75%, 50%);
-    --ab-property: hsl(270, 75%, 50%);
-    --ab-function: hsl(210, 100%, 50%);
-    --ab-constant: hsl(30, 100%, 50%);
-    --ab-string: hsl(190, 70%, 40%);
-    --ab-operator: hsl(300, 75%, 40%);
-    --ab-comment: hsl(340, 30%, 70%);
-    --ab-meta: hsl(40, 80%, 30%);
-    --ab-error: hsl(0, 70%, 50%);
+  /* Custom colors for code */
+  --ab-keyword: hsl(145, 75%, 30%);
+  --ab-variable: hsl(230, 75%, 50%);
+  --ab-property: hsl(270, 75%, 50%);
+  --ab-function: hsl(210, 100%, 50%);
+  --ab-constant: hsl(30, 100%, 50%);
+  --ab-string: hsl(190, 70%, 40%);
+  --ab-operator: hsl(300, 75%, 40%);
+  --ab-comment: hsl(340, 30%, 70%);
+  --ab-meta: hsl(40, 80%, 30%);
+  --ab-error: hsl(0, 70%, 50%);
 
-    /* Override defaults */
-    --jp-layout-color1: hsl(210, 30%, 95%);
+  /* Override defaults */
+  --jp-layout-color1: hsl(210, 30%, 95%);
 }
 
 body {
-    background: var(--ab-petrol-blue);
+  background: var(--ab-petrol-blue);
 }
 
 .jp-MarkdownOutput h1 {
-    color:white;
-    background-color: var(--ab-headers);
-    text-align: center;
-    border-radius: 30px;
-    padding: 10px;
+  color: white;
+  background-color: var(--ab-headers);
+  text-align: center;
+  border-radius: 30px;
+  padding: 10px;
 }
 
 .jp-MarkdownOutput h2,
 .jp-MarkdownOutput h3,
 .jp-MarkdownOutput h4 {
-    color: var(--ab-headers);
-    padding-left: 10px;
-    padding-top: 5px;
+  color: var(--ab-headers);
+  padding-left: 10px;
+  padding-top: 5px;
 }
 
 .jp-MarkdownOutput h2 {
-    border-top: 3px solid var(--ab-headers);
-    border-radius: 10px;
+  border-top: 3px solid var(--ab-headers);
+  border-radius: 10px;
 }
 
 .jp-MarkdownOutput h3 {
-    border-left: 3px solid var(--ab-headers);
+  border-left: 3px solid var(--ab-headers);
 }
 
 /* Autoscroll outputs */
 .jp-OutputArea-child {
-    max-height: 25em;
+  max-height: 25em;
 }
+
 .jp-OutputArea-child .jp-OutputArea-output {
-    overflow: auto;
+  overflow: auto;
 }
 
 /* Center any plots e.g. Matplotlib plots */
 .p-Widget.jp-RenderedImage.jp-mod-trusted.jp-OutputArea-output {
-    text-align: center;
+  text-align: center;
 }
 
 /* Code keywords */
 .cm-s-jupyter span.cm-variable {
-    color: var(--ab-variable);
+  color: var(--ab-variable);
 }
 
 .cm-s-jupyter span.cm-property {
-    color: var(--ab-property);
+  color: var(--ab-property);
 }
 
 .cm-s-jupyter span.cm-attribute {
-    color: var(--ab-function);
+  color: var(--ab-function);
 }
 
 .cm-s-jupyter span.cm-builtin {
-    color: var(--ab-function);
-    font-weight: bold;
+  color: var(--ab-function);
+  font-weight: bold;
 }
 
 .cm-s-jupyter span.cm-keyword {
-    color: var(--ab-keyword);
-    font-weight: bold;
+  color: var(--ab-keyword);
+  font-weight: bold;
 }
 
 .cm-s-jupyter span.cm-string {
-    color: var(--ab-string);
+  color: var(--ab-string);
 }
 
 .cm-s-jupyter span.cm-operator {
-    color: var(--ab-operator);
+  color: var(--ab-operator);
 }
 
 .cm-s-jupyter span.cm-number {
-    color: var(--ab-constant);
+  color: var(--ab-constant);
 }
 
 .cm-s-jupyter span.cm-comment {
-    color: var(--ab-comment);
+  color: var(--ab-comment);
 }
 
 .cm-s-jupyter span.cm-error {
-    background: var(--ab-neon);
-    color: var(--ab-error);
+  background: var(--ab-neon);
+  color: var(--ab-error);
 }
 
 .cm-s-jupyter span.cm-tag {
-    color: var(--ab-variable);
+  color: var(--ab-variable);
 }
 
 .cm-s-jupyter span.cm-link {
-    color: var(--ab-string);
+  color: var(--ab-string);
 }
 
 .cm-s-jupyter span.cm-meta {
-    color: var(--ab-meta);
+  color: var(--ab-meta);
 }

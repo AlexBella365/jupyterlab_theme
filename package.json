@@ -1,6 +1,6 @@
 {
   "name": "jupyterlab-custom-theme",
-  "version": "2.0.0",
+  "version": "2.2.0",
   "description": "Colourful light theme for JupyterLab with vivid Python linting",
   "keywords": [
     "jupyter",
@@ -19,14 +19,12 @@
   },
   "files": [
     "src/**/*.{js,js.map}",
-    "style/**/*.{css,js,eot,gif,html,jpg,json,png,svg,woff2,ttf}",
-    "style/index.js"
+    "style/**/*.css"
   ],
   "main": "src/index.js",
-  "style": "style/index.css",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AlexBella365/jupyterlab_theme.git"
+    "url": "git+https://github.com/AlexBella365/jupyterlab_theme.git"
   },
   "scripts": {
     "build": "jlpm build:labextension:dev",
@@ -48,7 +46,6 @@
     "stylelint:check": "stylelint --cache \"style/**/*.css\""
   },
   "dependencies": {
-    "@jupyterlab/application": "^4.5.0",
     "@jupyterlab/apputils": "^4.5.0"
   },
   "devDependencies": {
@@ -64,11 +61,17 @@
     "stylelint-csstree-validator": "^3.0.0",
     "stylelint-prettier": "^4.0.0"
   },
+  "overrides": {
+    "sanitize-html": "^2.17.4",
+    "postcss": "^8.5.10"
+  },
+  "resolutions": {
+    "sanitize-html": "^2.17.4",
+    "postcss": "^8.5.10"
+  },
   "sideEffects": [
-    "style/*.css",
-    "style/index.js"
+    "style/*.css"
   ],
-  "styleModule": "style/index.js",
   "publishConfig": {
     "access": "public"
   },
@@ -76,5 +79,25 @@
     "extension": true,
     "themePath": "style/index.css",
     "outputDir": "jupyterlab_custom_theme/labextension"
+  },
+  "stylelint": {
+    "extends": [
+      "stylelint-config-recommended",
+      "stylelint-config-standard",
+      "stylelint-prettier/recommended"
+    ],
+    "plugins": [
+      "stylelint-csstree-validator"
+    ],
+    "rules": {
+      "csstree/validator": true,
+      "property-no-vendor-prefix": null,
+      "selector-class-pattern": "^([a-z][A-z\\d]*)(-[A-z\\d]+)*$",
+      "selector-no-vendor-prefix": null,
+      "value-no-vendor-prefix": null,
+      "alpha-value-notation": null,
+      "color-function-notation": null,
+      "hue-degree-notation": null
+    }
   }
 }
