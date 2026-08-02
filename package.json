@@ -1,7 +1,7 @@
 {
   "name": "jupyterlab-custom-theme",
   "version": "2.3.0",
-  "description": "Colourful light theme for JupyterLab with vivid Python linting",
+  "description": "Colourful light theme for JupyterLab with vivid Python syntax highlighting",
   "keywords": [
     "jupyter",
     "jupyterlab",
