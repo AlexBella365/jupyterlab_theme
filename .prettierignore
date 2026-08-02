@@ -3,4 +3,3 @@ node_modules
 **/lib
 **/package.json
 jupyterlab_custom_theme/labextension
-.eslintrc.js
